@@ -15,5 +15,6 @@
 @property(nonatomic, retain) IBOutlet UILabel *price;
 @property(nonatomic, retain) IBOutlet UIImageView *image;
 @property(nonatomic, retain) IBOutlet UILabel *ratings;
-
+@property(nonatomic, retain) IBOutlet UIButton *placesNearby;
+@property(nonatomic, retain) IBOutlet UIButton *book;
 @end

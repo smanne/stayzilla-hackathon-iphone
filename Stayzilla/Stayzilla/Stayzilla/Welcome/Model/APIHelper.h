@@ -12,6 +12,7 @@
 
 @optional
 -(void) didGetHotels:(NSArray *) hotels;
+-(void) didGetInterestPlaces:(NSArray *) places;
 
 @end
 
@@ -20,5 +21,6 @@
 @property(nonatomic) id delegate;
 
 -(void) getHotelsForLocation:(NSString *) location checkInDate:(NSString *) checkIn checkOutDate:(NSString *) checkOut;
-
+-(void) getInterestPlacesForLocation:(NSString *) location;
+- (UIImage*) placePhoto:(NSDictionary*) photoDetails;
 @end
