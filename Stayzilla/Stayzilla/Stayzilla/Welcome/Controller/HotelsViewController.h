@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "APIHelper.h"
 
-@interface HotelsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface HotelsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, APIHelperProtocol>
 
 @property (nonatomic, retain) NSArray *hotelsArray;
 

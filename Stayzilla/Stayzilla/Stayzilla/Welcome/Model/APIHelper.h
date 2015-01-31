@@ -13,6 +13,8 @@
 @optional
 -(void) didGetHotels:(NSArray *) hotels;
 -(void) didGetOffer:(NSDictionary *) offerDictionary;
+-(void) didGetInterestPlaces:(NSArray *) places;
+
 
 @end
 
@@ -28,5 +30,9 @@
                       checkInDate:(NSString *) checkIn
                      checkOutDate:(NSString *) checkOut
                   userDestination:(NSString *) userDestination;
+
+-(void) getHotelsForLocation:(NSString *) location checkInDate:(NSString *) checkIn checkOutDate:(NSString *) checkOut;
+-(void) getInterestPlacesForLocation:(NSString *) location;
+- (UIImage*) placePhoto:(NSDictionary*) photoDetails;
 
 @end

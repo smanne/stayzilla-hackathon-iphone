@@ -10,7 +10,7 @@
 
 @implementation HotelsCellViewTableViewCell
 
-@synthesize name, address, image, ratings, price;
+@synthesize name, address, image, ratings, price, placesNearby,  book;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

@@ -5,9 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HotelsViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SightseeingViewController">
             <connections>
-                <outlet property="view" destination="XuG-oO-GUp" id="UFV-Wu-nVd"/>
+                <outlet property="placeTableView" destination="hHT-Fv-5Uw" id="Kz6-4V-juX"/>
+                <outlet property="view" destination="XuG-oO-GUp" id="AfD-GP-h1R"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,12 +20,12 @@
                     <rect key="frame" x="0.0" y="60" width="320" height="508"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="ggM-UU-zyT"/>
-                        <outlet property="delegate" destination="-1" id="SQA-Ro-nSC"/>
+                        <outlet property="dataSource" destination="-1" id="I5s-YU-d2o"/>
+                        <outlet property="delegate" destination="-1" id="NJg-KX-g3C"/>
                     </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.68357402150000002" green="0.24295813359999999" blue="0.13920243800000001" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>

@@ -71,6 +71,8 @@
 		6E576FF51A7CC8A3004D3CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E576FDD1A7CC8A3004D3CFF /* UIKit.framework */; };
 		6E576FFD1A7CC8A3004D3CFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E576FFB1A7CC8A3004D3CFF /* InfoPlist.strings */; };
 		6E576FFF1A7CC8A3004D3CFF /* StayzillaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E576FFE1A7CC8A3004D3CFF /* StayzillaTests.m */; };
+		6ED860A31A7D5F06009C625E /* SightseeingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED860A21A7D5F06009C625E /* SightseeingViewController.m */; };
+		6ED860AB1A7D6B6E009C625E /* SightSeeingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED860AA1A7D6B6E009C625E /* SightSeeingView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,8 +111,8 @@
 		5560BFDE1A7CE30900B5996D /* SelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionViewController.h; sourceTree = "<group>"; };
 		5560BFDF1A7CE30900B5996D /* SelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionViewController.m; sourceTree = "<group>"; };
 		5560BFE11A7CE32900B5996D /* SelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionView.xib; sourceTree = "<group>"; };
-		5560BFE31A7CEAD500B5996D /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHelper.h; sourceTree = "<group>"; };
-		5560BFE41A7CEAD500B5996D /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHelper.m; sourceTree = "<group>"; };
+		5560BFE31A7CEAD500B5996D /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIHelper.h; path = Welcome/Model/APIHelper.h; sourceTree = "<group>"; };
+		5560BFE41A7CEAD500B5996D /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIHelper.m; path = Welcome/Model/APIHelper.m; sourceTree = "<group>"; };
 		5560BFE61A7CED3300B5996D /* HotelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsViewController.h; sourceTree = "<group>"; };
 		5560BFE71A7CED3300B5996D /* HotelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsViewController.m; sourceTree = "<group>"; };
 		5560BFEB1A7CEDC000B5996D /* HotelsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelsView.xib; sourceTree = "<group>"; };
@@ -149,7 +151,7 @@
 		6E4AFAFE1A7CD5390040E64E /* BusinessTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessTripViewController.m; sourceTree = "<group>"; };
 		6E4AFB021A7CD5730040E64E /* BusinessTripView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessTripView.xib; sourceTree = "<group>"; };
 		6E4AFB091A7CD9570040E64E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		6E4AFB0B1A7CD96D0040E64E /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Framework/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		6E4AFB0B1A7CD96D0040E64E /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		6E576FD61A7CC8A3004D3CFF /* Stayzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stayzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E576FD91A7CC8A3004D3CFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6E576FDB1A7CC8A3004D3CFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -166,6 +168,9 @@
 		6E576FFA1A7CC8A3004D3CFF /* StayzillaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StayzillaTests-Info.plist"; sourceTree = "<group>"; };
 		6E576FFC1A7CC8A3004D3CFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6E576FFE1A7CC8A3004D3CFF /* StayzillaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StayzillaTests.m; sourceTree = "<group>"; };
+		6ED860A11A7D5F06009C625E /* SightseeingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SightseeingViewController.h; sourceTree = "<group>"; };
+		6ED860A21A7D5F06009C625E /* SightseeingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SightseeingViewController.m; sourceTree = "<group>"; };
+		6ED860AA1A7D6B6E009C625E /* SightSeeingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SightSeeingView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,11 +297,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		6E4AF9BE1A7CCE050040E64E /* Framework */ = {
+		6E4AF9BE1A7CCE050040E64E /* ExternalFramework */ = {
 			isa = PBXGroup;
 			children = (
+				6E4AFB0B1A7CD96D0040E64E /* GoogleMaps.bundle */,
 				6E4AFB091A7CD9570040E64E /* GoogleMaps.framework */,
 			);
+			name = ExternalFramework;
 			path = Framework;
 			sourceTree = "<group>";
 		};
@@ -345,17 +352,16 @@
 		6E576FDF1A7CC8A3004D3CFF /* Stayzilla */ = {
 			isa = PBXGroup;
 			children = (
-				5560BFF41A7D046E00B5996D /* Resources */,
 				5560BFD51A7CDC8800B5996D /* Welcome */,
-				6E4AFB0B1A7CD96D0040E64E /* GoogleMaps.bundle */,
-				6E4AF9BE1A7CCE050040E64E /* Framework */,
+				6ED8609E1A7D3904009C625E /* BusinessTrip */,
+				6ED8609B1A7D38AF009C625E /* SightseeingTrip */,
+				6ED8609A1A7D388B009C625E /* Helper */,
+				5560BFF41A7D046E00B5996D /* Resources */,
+				6E4AF9BE1A7CCE050040E64E /* ExternalFramework */,
 				6E576FE81A7CC8A3004D3CFF /* AppDelegate.h */,
 				6E576FE91A7CC8A3004D3CFF /* AppDelegate.m */,
 				6E576FEB1A7CC8A3004D3CFF /* Images.xcassets */,
 				6E576FE01A7CC8A3004D3CFF /* Supporting Files */,
-				6E4AFAFD1A7CD5390040E64E /* BusinessTripViewController.h */,
-				6E4AFAFE1A7CD5390040E64E /* BusinessTripViewController.m */,
-				6E4AFB021A7CD5730040E64E /* BusinessTripView.xib */,
 			);
 			path = Stayzilla;
 			sourceTree = "<group>";
@@ -387,6 +393,67 @@
 				6E576FFB1A7CC8A3004D3CFF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6ED8609A1A7D388B009C625E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5560BFE31A7CEAD500B5996D /* APIHelper.h */,
+				5560BFE41A7CEAD500B5996D /* APIHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		6ED8609B1A7D38AF009C625E /* SightseeingTrip */ = {
+			isa = PBXGroup;
+			children = (
+				6ED8609D1A7D38D5009C625E /* View */,
+				6ED8609C1A7D38CF009C625E /* Controller */,
+			);
+			name = SightseeingTrip;
+			sourceTree = "<group>";
+		};
+		6ED8609C1A7D38CF009C625E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6ED860A11A7D5F06009C625E /* SightseeingViewController.h */,
+				6ED860A21A7D5F06009C625E /* SightseeingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6ED8609D1A7D38D5009C625E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6ED860AA1A7D6B6E009C625E /* SightSeeingView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6ED8609E1A7D3904009C625E /* BusinessTrip */ = {
+			isa = PBXGroup;
+			children = (
+				6ED860A01A7D3922009C625E /* View */,
+				6ED8609F1A7D391D009C625E /* Controller */,
+			);
+			name = BusinessTrip;
+			sourceTree = "<group>";
+		};
+		6ED8609F1A7D391D009C625E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E4AFAFD1A7CD5390040E64E /* BusinessTripViewController.h */,
+				6E4AFAFE1A7CD5390040E64E /* BusinessTripViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6ED860A01A7D3922009C625E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E4AFB021A7CD5730040E64E /* BusinessTripView.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,6 +569,7 @@
 				554644491A7D403E00B0D4B3 /* cab.png in Resources */,
 				6E4AFB031A7CD5730040E64E /* BusinessTripView.xib in Resources */,
 				5546444B1A7D403E00B0D4B3 /* dollar.png in Resources */,
+				6ED860AB1A7D6B6E009C625E /* SightSeeingView.xib in Resources */,
 				5560BFDD1A7CDC8800B5996D /* WelcomeView.xib in Resources */,
 				5560BFF91A7D049200B5996D /* hotel1.jpg in Resources */,
 				5560BFFA1A7D049200B5996D /* hotel4.jpg in Resources */,
@@ -546,6 +614,7 @@
 				5560BFE01A7CE30900B5996D /* SelectionViewController.m in Sources */,
 				554644291A7D1A5400B0D4B3 /* LocationViewController.m in Sources */,
 				5560BFE81A7CED3300B5996D /* HotelsViewController.m in Sources */,
+				6ED860A31A7D5F06009C625E /* SightseeingViewController.m in Sources */,
 				6E4AFAFF1A7CD5390040E64E /* BusinessTripViewController.m in Sources */,
 				5560BFDC1A7CDC8800B5996D /* WelcomeViewController.m in Sources */,
 				55A69DC51A7D67B800B388EA /* SPGooglePlacesAutocompletePlace.m in Sources */,

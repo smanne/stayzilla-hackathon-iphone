@@ -32,21 +32,30 @@
     
     NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:urlData
                                                                        options:kNilOptions
-                                                                         error:&error];;
+                                                                         error:&error];
     [delegate didGetHotels:[responseDictionary objectForKey:@"hotels"]];
 }
 
--(void) getSavingOfferForLocation:(NSString *) location checkInDate:(NSString *) checkIn checkOutDate:(NSString *) checkOut userDestination:(NSString *) userDestination{
+
+-(void) getInterestPlacesForLocation:(NSString *) location{
+//    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
+//    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://180.92.168.7/hotels"]]];
+//    [request setHTTPMethod:@"GET"];
+//    NSError *error;
+//    NSURLResponse *response;
+//    NSData *urlData=[NSURLConnection sendSynchronousRequest:request
+//                                          returningResponse:&response
+//                                                      error:&error];
+//    
+//    NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:urlData
+//                                                                       options:kNilOptions
+//                                                                         error:&error];
+
     
-    NSString *urlString = [NSString stringWithFormat:@"http://128.199.160.52/web/caluclate_saving.php?usersource=%@,&destination=%@",location, userDestination];
-    urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
-    [request setURL:[NSURL URLWithString:urlString]];
-    [request setHTTPMethod:@"GET"];
-//    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
-//    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-//    [request setHTTPBody:postData];
-    
+    [request setURL:[NSURL URLWithString:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=12.9667,77.5667&type=amusement_park%7Cbar&radius=30000&key=AIzaSyA_umdjHwaK3R9hepK1x6_OUI-VoQCbgMI"]];
+//    [request setHTTPMethod:@"GET"];
+
     NSError *error;
     NSURLResponse *response;
     NSData *urlData=[NSURLConnection sendSynchronousRequest:request
@@ -55,9 +64,26 @@
     
     NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:urlData
                                                                        options:kNilOptions
-                                                                         error:&error];;
-    [delegate didGetOffer:responseDictionary];
+                                                                         error:&error];
+    [delegate didGetInterestPlaces:[responseDictionary objectForKey:@"results"]];
 
+
+}
+
+
+- (UIImage*) placePhoto:(NSDictionary*) photoDetails{
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
+    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/photo?maxwidth=100&photoreference=%@&key=AIzaSyA_umdjHwaK3R9hepK1x6_OUI-VoQCbgMI", [photoDetails objectForKey:@"photo_reference"]]]];
+    //    [request setHTTPMethod:@"GET"];
+    NSError *error;
+    NSURLResponse *response;
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:request
+                                          returningResponse:&response
+                                                      error:&error];
+     
+     UIImage* img = [UIImage imageWithData:urlData];
+     
+     return img;
 }
 
 @end
