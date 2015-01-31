@@ -11,9 +11,10 @@
 #import "AppDelegate.h"
 
 #import <GoogleMaps/GoogleMaps.h>
-
+#import "BusinessTripViewController.h"
 @implementation AppDelegate
 
+@synthesize navigationController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -22,16 +23,16 @@
 //    LaunchViewController *authCon = [[LaunchViewController alloc] initWithNibName:@"LaunchViewController" bundle:[NSBundle mainBundle]];
 //    //self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
 //    //[self presentModalViewController:help animated:YES];
-//    UINavigationController *navcon = [[UINavigationController alloc] initWithRootViewController:authCon];
+    BusinessTripViewController *cpvc = [[BusinessTripViewController alloc] init];
+
+    UINavigationController *navcon = [[UINavigationController alloc] initWithRootViewController:cpvc];
 //    
 //    if (profilesSelected){
-//        WelcomeViewController *cpvc = [[WelcomeViewController alloc] init];
 //        [navcon pushViewController:cpvc animated:NO];
 //    }
 //    
-//    self.navigationController = navcon;
-//    [self.window setRootViewController:self.navigationController];
- //   [self.window makeKeyAndVisible];
+    self.navigationController = navcon;
+    [self.window setRootViewController:self.navigationController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
