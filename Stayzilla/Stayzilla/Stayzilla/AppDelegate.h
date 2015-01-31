@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  Stayzilla
 //
-//  Created by Swapnil Patil on 31/01/15.
+//  Created by Kiran Juikar on 31/01/15.
 //  Copyright (c) 2015 Blackhat. All rights reserved.
 //
 
@@ -12,6 +12,4 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
-

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>58FF2086-1C92-4D67-9FBC-7A17EA5F72A2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Stayzilla</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FFAFBB6E-8877-4E6D-B2BF-15AFD949BE4F</key>
+		<string>https://github.com/smanne/stayzilla-hackathon-iphone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Stayzilla/Stayzilla/Stayzilla.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FFAFBB6E-8877-4E6D-B2BF-15AFD949BE4F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/smanne/stayzilla-hackathon-iphone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FFAFBB6E-8877-4E6D-B2BF-15AFD949BE4F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FFAFBB6E-8877-4E6D-B2BF-15AFD949BE4F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>stayzilla-hackathon-iphone</string>
+		</dict>
+	</array>
+</dict>
+</plist>

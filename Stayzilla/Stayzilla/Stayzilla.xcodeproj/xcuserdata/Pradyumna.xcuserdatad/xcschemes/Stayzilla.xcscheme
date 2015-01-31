@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0610"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55A7DFA21A7CBCC300F56B7B"
+               BlueprintIdentifier = "6E576FD51A7CC8A3004D3CFF"
                BuildableName = "Stayzilla.app"
                BlueprintName = "Stayzilla"
-               ReferencedContainer = "container:Stayzilla.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55A7DFBB1A7CBCC300F56B7B"
-               BuildableName = "StayzillaTests.xctest"
-               BlueprintName = "StayzillaTests"
                ReferencedContainer = "container:Stayzilla.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55A7DFBB1A7CBCC300F56B7B"
+               BlueprintIdentifier = "6E576FF01A7CC8A3004D3CFF"
                BuildableName = "StayzillaTests.xctest"
                BlueprintName = "StayzillaTests"
                ReferencedContainer = "container:Stayzilla.xcodeproj">
@@ -56,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55A7DFA21A7CBCC300F56B7B"
+            BlueprintIdentifier = "6E576FD51A7CC8A3004D3CFF"
             BuildableName = "Stayzilla.app"
             BlueprintName = "Stayzilla"
             ReferencedContainer = "container:Stayzilla.xcodeproj">
@@ -75,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55A7DFA21A7CBCC300F56B7B"
+            BlueprintIdentifier = "6E576FD51A7CC8A3004D3CFF"
             BuildableName = "Stayzilla.app"
             BlueprintName = "Stayzilla"
             ReferencedContainer = "container:Stayzilla.xcodeproj">
@@ -93,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55A7DFA21A7CBCC300F56B7B"
+            BlueprintIdentifier = "6E576FD51A7CC8A3004D3CFF"
             BuildableName = "Stayzilla.app"
             BlueprintName = "Stayzilla"
             ReferencedContainer = "container:Stayzilla.xcodeproj">
