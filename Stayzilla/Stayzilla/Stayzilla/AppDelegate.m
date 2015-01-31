@@ -1,3 +1,5 @@
+
+
 //
 //  AppDelegate.m
 //  Stayzilla
@@ -14,6 +16,20 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+//    LaunchViewController *authCon = [[LaunchViewController alloc] initWithNibName:@"LaunchViewController" bundle:[NSBundle mainBundle]];
+//    //self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
+//    //[self presentModalViewController:help animated:YES];
+//    UINavigationController *navcon = [[UINavigationController alloc] initWithRootViewController:authCon];
+//    
+//    if (profilesSelected){
+//        WelcomeViewController *cpvc = [[WelcomeViewController alloc] init];
+//        [navcon pushViewController:cpvc animated:NO];
+//    }
+//    
+//    self.navigationController = navcon;
+//    [self.window setRootViewController:self.navigationController];
+ //   [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
