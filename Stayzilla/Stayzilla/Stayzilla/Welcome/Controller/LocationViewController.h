@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController.h
+//  LocationViewController.h
 //  Stayzilla
 //
 //  Created by Swapnil Patil on 31/01/15.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "APIHelper.h"
 
-@interface WelcomeViewController : UIViewController<UITextViewDelegate, APIHelperProtocol>
-
+@interface LocationViewController : UIViewController<UISearchBarDelegate,UISearchDisplayDelegate>
 
 @end
