@@ -28,12 +28,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    hotelsArray = [[NSMutableArray alloc] init];
-//    for (int indexCounter=0; indexCounter < 4; indexCounter++) {
-//        NSMutableDictionary * hotel = [NSMutableDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"Hotel %d",indexCounter+1],@"name",[NSString stringWithFormat:@"%d",(indexCounter+1)*100],@"price",[NSString stringWithFormat:@"Address %d",indexCounter+1],@"address",[NSString stringWithFormat:@"hotel%d.jpg",indexCounter+1],@"image",nil];
-//        
-//        [hotelsArray addObject:hotel];
-//    }
+    //    hotelsArray = [[NSMutableArray alloc] init];
+    //    for (int indexCounter=0; indexCounter < 4; indexCounter++) {
+    //        NSMutableDictionary * hotel = [NSMutableDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"Hotel %d",indexCounter+1],@"name",[NSString stringWithFormat:@"%d",(indexCounter+1)*100],@"price",[NSString stringWithFormat:@"Address %d",indexCounter+1],@"address",[NSString stringWithFormat:@"hotel%d.jpg",indexCounter+1],@"image",nil];
+    //
+    //        [hotelsArray addObject:hotel];
+    //    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,14 +65,25 @@
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"HotelsCellView" owner:self options:nil] objectAtIndex:0];
     }
-
+    
     NSDictionary *hotel = [hotelsArray objectAtIndex:indexPath.row];
     
     cell.name.text = [hotel objectForKey:@"displayName"];
     cell.address.text = [hotel objectForKey:@"address"];
     cell.price.text = [hotel objectForKey:@"price"];
-    cell.image.image = [UIImage imageNamed:@"hotel1.jpg"];
-
+    //cell.image.image = [UIImage imageNamed:@"hotel1.jpg"];
+    dispatch_async(dispatch_get_main_queue(),
+                   ^{
+                       APIHelper* helper = [[APIHelper alloc] init];
+                       
+                       if ([hotel objectForKey:@"imageURL"]) {
+                           
+                           UIImage* img = [helper placeHotelPhoto:[hotel objectForKey:@"imageURL"]];
+                           cell.image.image = img;
+                       }
+                       
+                   });
+    
     [cell.placesNearby addTarget:self action:@selector(placesNearbyClick:) forControlEvents:UIControlEventTouchUpInside];
     
     return cell;
@@ -82,7 +93,7 @@
     APIHelper *helper = [[APIHelper alloc] init];
     helper.delegate = self;
     [helper getInterestPlacesForLocation:@""];
-
+    
 }
 
 

@@ -31,8 +31,8 @@
                      checkOutDate:(NSString *) checkOut
                   userDestination:(NSString *) userDestination;
 
--(void) getHotelsForLocation:(NSString *) location checkInDate:(NSString *) checkIn checkOutDate:(NSString *) checkOut;
 -(void) getInterestPlacesForLocation:(NSString *) location;
 - (UIImage*) placePhoto:(NSDictionary*) photoDetails;
+- (UIImage*) placeHotelPhoto:(NSDictionary*) photoDetails;
 
 @end

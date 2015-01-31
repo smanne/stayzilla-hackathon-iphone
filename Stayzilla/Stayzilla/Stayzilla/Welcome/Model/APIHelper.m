@@ -14,7 +14,14 @@
 
 -(void) getHotelsForLocation:(NSString *) location checkInDate:(NSString *) checkIn checkOutDate:(NSString *) checkOut{
     
-    NSString *post =[NSString stringWithFormat:@"location=%@&checkin=%@&checkout=%@&property_type=Hotels",location, checkIn, checkOut];
+    NSArray *splitString = [location componentsSeparatedByString:@","];
+    NSString *mainLocation = location;
+    if (splitString.count > 0) {
+        mainLocation = [splitString firstObject];
+    }
+   
+    
+    NSString *post =[NSString stringWithFormat:@"location=%@&checkin=%@&checkout=%@&property_type=Hotels",mainLocation, checkIn, checkOut];
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%d",(int)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
@@ -38,24 +45,9 @@
 
 
 -(void) getInterestPlacesForLocation:(NSString *) location{
-//    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
-//    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://180.92.168.7/hotels"]]];
-//    [request setHTTPMethod:@"GET"];
-//    NSError *error;
-//    NSURLResponse *response;
-//    NSData *urlData=[NSURLConnection sendSynchronousRequest:request
-//                                          returningResponse:&response
-//                                                      error:&error];
-//    
-//    NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:urlData
-//                                                                       options:kNilOptions
-//                                                                         error:&error];
 
-    
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
     [request setURL:[NSURL URLWithString:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=12.9667,77.5667&type=amusement_park%7Cbar&radius=30000&key=AIzaSyA_umdjHwaK3R9hepK1x6_OUI-VoQCbgMI"]];
-//    [request setHTTPMethod:@"GET"];
-
     NSError *error;
     NSURLResponse *response;
     NSData *urlData=[NSURLConnection sendSynchronousRequest:request
@@ -85,5 +77,42 @@
      
      return img;
 }
+
+- (UIImage*) placeHotelPhoto:(NSString*) photoPath{
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
+    [request setURL:[NSURL URLWithString:photoPath]];
+    NSError *error;
+    NSURLResponse *response;
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:request
+                                          returningResponse:&response
+                                                      error:&error];
+    
+    UIImage* img = [UIImage imageWithData:urlData];
+    
+    return img;
+}
+
+-(void) getSavingOfferForLocation:(NSString *) location checkInDate:(NSString *) checkIn checkOutDate:(NSString *) checkOut userDestination:(NSString *) userDestination{
+    
+    NSString *urlString = [NSString stringWithFormat:@"http://128.199.160.52/web/caluclate_saving.php?usersource=%@,&destination=%@",location, userDestination];
+    urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
+    [request setURL:[NSURL URLWithString:urlString]];
+    [request setHTTPMethod:@"GET"];
+    
+    NSError *error;
+    NSURLResponse *response;
+    NSData *urlData=[NSURLConnection sendSynchronousRequest:request
+                                          returningResponse:&response
+                                                      error:&error];
+    
+    NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:urlData
+                                                                       options:kNilOptions
+                                                                         error:&error];;
+    [delegate didGetOffer:responseDictionary];
+    
+}
+
 
 @end
