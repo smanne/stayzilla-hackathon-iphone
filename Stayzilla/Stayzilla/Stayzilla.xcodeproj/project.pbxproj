@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		6E4AFAE31A7CCE950040E64E /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE21A7CCE950040E64E /* GoogleMaps.framework */; };
+		6E4AFAE51A7CD1AD0040E64E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE41A7CD1AD0040E64E /* AVFoundation.framework */; };
+		6E4AFAE71A7CD1B50040E64E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE61A7CD1B50040E64E /* CoreData.framework */; };
+		6E4AFAE91A7CD1BE0040E64E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE81A7CD1BE0040E64E /* CoreLocation.framework */; };
+		6E4AFAEB1A7CD1C70040E64E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAEA1A7CD1C70040E64E /* CoreText.framework */; };
+		6E4AFAED1A7CD1CF0040E64E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAEC1A7CD1CF0040E64E /* GLKit.framework */; };
+		6E4AFAEF1A7CD1D70040E64E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAEE1A7CD1D70040E64E /* ImageIO.framework */; };
+		6E4AFAF11A7CD1E50040E64E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAF01A7CD1E50040E64E /* libc++.dylib */; };
+		6E4AFAF31A7CD1F30040E64E /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAF21A7CD1F30040E64E /* libicucore.dylib */; };
+		6E4AFAF51A7CD1FE0040E64E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAF41A7CD1FE0040E64E /* libz.dylib */; };
+		6E4AFAF71A7CD2060040E64E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAF61A7CD2060040E64E /* OpenGLES.framework */; };
+		6E4AFAF91A7CD20D0040E64E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAF81A7CD20D0040E64E /* QuartzCore.framework */; };
+		6E4AFAFB1A7CD2160040E64E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAFA1A7CD2160040E64E /* SystemConfiguration.framework */; };
 		6E576FDA1A7CC8A3004D3CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E576FD91A7CC8A3004D3CFF /* Foundation.framework */; };
 		6E576FDC1A7CC8A3004D3CFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E576FDB1A7CC8A3004D3CFF /* CoreGraphics.framework */; };
 		6E576FDE1A7CC8A3004D3CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E576FDD1A7CC8A3004D3CFF /* UIKit.framework */; };
@@ -34,6 +46,18 @@
 
 /* Begin PBXFileReference section */
 		6E4AFAE21A7CCE950040E64E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		6E4AFAE41A7CD1AD0040E64E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6E4AFAE61A7CD1B50040E64E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6E4AFAE81A7CD1BE0040E64E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6E4AFAEA1A7CD1C70040E64E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		6E4AFAEC1A7CD1CF0040E64E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		6E4AFAEE1A7CD1D70040E64E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		6E4AFAF01A7CD1E50040E64E /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		6E4AFAF21A7CD1F30040E64E /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		6E4AFAF41A7CD1FE0040E64E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6E4AFAF61A7CD2060040E64E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6E4AFAF81A7CD20D0040E64E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6E4AFAFA1A7CD2160040E64E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6E576FD61A7CC8A3004D3CFF /* Stayzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stayzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E576FD91A7CC8A3004D3CFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6E576FDB1A7CC8A3004D3CFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,6 +81,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4AFAFB1A7CD2160040E64E /* SystemConfiguration.framework in Frameworks */,
+				6E4AFAF91A7CD20D0040E64E /* QuartzCore.framework in Frameworks */,
+				6E4AFAF71A7CD2060040E64E /* OpenGLES.framework in Frameworks */,
+				6E4AFAF51A7CD1FE0040E64E /* libz.dylib in Frameworks */,
+				6E4AFAF31A7CD1F30040E64E /* libicucore.dylib in Frameworks */,
+				6E4AFAF11A7CD1E50040E64E /* libc++.dylib in Frameworks */,
+				6E4AFAEF1A7CD1D70040E64E /* ImageIO.framework in Frameworks */,
+				6E4AFAED1A7CD1CF0040E64E /* GLKit.framework in Frameworks */,
+				6E4AFAEB1A7CD1C70040E64E /* CoreText.framework in Frameworks */,
+				6E4AFAE91A7CD1BE0040E64E /* CoreLocation.framework in Frameworks */,
+				6E4AFAE71A7CD1B50040E64E /* CoreData.framework in Frameworks */,
+				6E4AFAE51A7CD1AD0040E64E /* AVFoundation.framework in Frameworks */,
 				6E576FDC1A7CC8A3004D3CFF /* CoreGraphics.framework in Frameworks */,
 				6E576FDE1A7CC8A3004D3CFF /* UIKit.framework in Frameworks */,
 				6E4AFAE31A7CCE950040E64E /* GoogleMaps.framework in Frameworks */,
@@ -107,6 +143,18 @@
 		6E576FD81A7CC8A3004D3CFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E4AFAFA1A7CD2160040E64E /* SystemConfiguration.framework */,
+				6E4AFAF81A7CD20D0040E64E /* QuartzCore.framework */,
+				6E4AFAF61A7CD2060040E64E /* OpenGLES.framework */,
+				6E4AFAF41A7CD1FE0040E64E /* libz.dylib */,
+				6E4AFAF21A7CD1F30040E64E /* libicucore.dylib */,
+				6E4AFAF01A7CD1E50040E64E /* libc++.dylib */,
+				6E4AFAEE1A7CD1D70040E64E /* ImageIO.framework */,
+				6E4AFAEC1A7CD1CF0040E64E /* GLKit.framework */,
+				6E4AFAEA1A7CD1C70040E64E /* CoreText.framework */,
+				6E4AFAE81A7CD1BE0040E64E /* CoreLocation.framework */,
+				6E4AFAE61A7CD1B50040E64E /* CoreData.framework */,
+				6E4AFAE41A7CD1AD0040E64E /* AVFoundation.framework */,
 				6E576FD91A7CC8A3004D3CFF /* Foundation.framework */,
 				6E576FDB1A7CC8A3004D3CFF /* CoreGraphics.framework */,
 				6E576FDD1A7CC8A3004D3CFF /* UIKit.framework */,
@@ -361,6 +409,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -392,6 +441,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -10,6 +10,8 @@
 
 #import "AppDelegate.h"
 
+#import <GoogleMaps/GoogleMaps.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -32,6 +34,8 @@
  //   [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [GMSServices provideAPIKey:@"AIzaSyDRk0RY0BhzuAUKw9hdxBgcveD3lfJ0U10"];
     return YES;
 }
 
