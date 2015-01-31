@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "APIHelper.h"
+#import "HotelsViewController.h"
+#import "ComparisionViewController.h"
+#import "SPGooglePlacesAutocompleteViewController.h"
 
-@interface WelcomeViewController : UIViewController<UITextViewDelegate, APIHelperProtocol>
+@interface WelcomeViewController : UIViewController <UITextFieldDelegate, APIHelperProtocol, LocatioanSelectionDelegate>
 
 
 @end

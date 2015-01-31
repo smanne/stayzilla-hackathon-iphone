@@ -7,14 +7,15 @@
 //
 
 #import "WelcomeViewController.h"
-#import "HotelsViewController.h"
-
 
 @interface WelcomeViewController(){
     
     IBOutlet UITextField *location;
+    IBOutlet UITextField *userDestionation;
     IBOutlet UIImageView *refresh;
     IBOutlet UIView *background;
+    
+    int selectedTextfieldTag;
 }
 
 @end
@@ -45,16 +46,36 @@
 
 #pragma mark - TextView Delegate
 
-- (void)textViewDidBeginEditing:(UITextView *)textView{
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     
+    SPGooglePlacesAutocompleteViewController *locationViewController = nil;
     
+    switch (textField.tag) {
+        case 11:
+            selectedTextfieldTag = 11;
+            locationViewController = [[SPGooglePlacesAutocompleteViewController alloc] init];
+            locationViewController.delegate = self;
+            [self.navigationController presentViewController:locationViewController animated:YES completion:^{
+            
+            }];
+            break;
+            
+        case 13:
+            selectedTextfieldTag = 13;
+            locationViewController = [[SPGooglePlacesAutocompleteViewController alloc] init];
+            locationViewController.delegate = self;
+            [self.navigationController presentViewController:locationViewController animated:YES completion:^{
+                
+            }];
+            break;
+            
+        default:
+            break;
+    }
+    
+    return NO;
 }
 
-
-- (void)textViewDidEndEditing:(UITextView *)textView{
-    
-    
-}
 
 #pragma mark IBActions
 
@@ -64,7 +85,21 @@
     [location resignFirstResponder];
     __block NSThread *downloadThread = [[NSThread alloc] initWithTarget:self selector:@selector(getHotels) object:nil];
     [downloadThread start];
+}
+
+-(IBAction) searchOffers:(id)sender{
     
+    [self startAnimation];
+    [location resignFirstResponder];
+    __block NSThread *downloadThread = [[NSThread alloc] initWithTarget:self selector:@selector(getOffers) object:nil];
+    [downloadThread start];
+}
+
+-(void) getOffers{
+    
+    APIHelper *helper = [[APIHelper alloc] init];
+    helper.delegate = self;
+    [helper getSavingOfferForLocation:location.text checkInDate:@"06/02/2015" checkOutDate:@"09/02/2015" userDestination:userDestionation.text];
 }
 
 -(void) getHotels{
@@ -100,6 +135,26 @@
                        hotelsViewController.hotelsArray = hotels;
                        [self.navigationController pushViewController:hotelsViewController animated:YES];
                    });
+}
+
+-(void) didGetOffer:(NSDictionary *)offerDictionary{
+    
+    dispatch_async(dispatch_get_main_queue(),
+                   ^{
+                       [self stopAnimation];
+                       ComparisionViewController *comparisionViewController = [[ComparisionViewController alloc] init];
+                       comparisionViewController.offerDictionary = offerDictionary;
+                       [self.navigationController pushViewController:comparisionViewController animated:YES];
+                   });
+}
+
+-(void) setPlace:(NSString *) locationInfo{
+   
+    if (selectedTextfieldTag == 11) {
+        location.text = locationInfo;
+    }else if(selectedTextfieldTag == 13){
+        userDestionation.text = locationInfo;
+    }
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface ComparisionViewController : UIViewController
 
+@property(nonatomic, retain) NSDictionary *offerDictionary;
+
 @end

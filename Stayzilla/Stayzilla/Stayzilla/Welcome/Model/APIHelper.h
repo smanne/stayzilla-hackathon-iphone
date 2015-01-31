@@ -12,6 +12,7 @@
 
 @optional
 -(void) didGetHotels:(NSArray *) hotels;
+-(void) didGetOffer:(NSDictionary *) offerDictionary;
 
 @end
 
@@ -19,6 +20,13 @@
 
 @property(nonatomic) id delegate;
 
--(void) getHotelsForLocation:(NSString *) location checkInDate:(NSString *) checkIn checkOutDate:(NSString *) checkOut;
+-(void) getHotelsForLocation:(NSString *) location
+                 checkInDate:(NSString *) checkIn
+                checkOutDate:(NSString *) checkOut;
+
+-(void) getSavingOfferForLocation:(NSString *) location
+                      checkInDate:(NSString *) checkIn
+                     checkOutDate:(NSString *) checkOut
+                  userDestination:(NSString *) userDestination;
 
 @end

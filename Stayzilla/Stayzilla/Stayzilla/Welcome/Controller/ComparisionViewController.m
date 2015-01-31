@@ -15,6 +15,8 @@
 
 @implementation ComparisionViewController
 
+@synthesize offerDictionary;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -48,7 +50,7 @@
 */
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 255.0;
+    return 56.0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -64,52 +66,52 @@
     cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifierLocalWorksheetVideo];
     
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"ComparisionTableViewCell" owner:self options:nil] objectAtIndex:0];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"ComaparisonTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
-    
+    cell.leftMessage.numberOfLines = 3;
+    cell.rightMessage.numberOfLines = 3;
     switch (indexPath.row) {
         case 0:
             cell.leftMessage.text = @"If you go to your choice";
             cell.rightMessage.text = @"If you go with Stayzilla";
-            cell.imageView.image = [UIImage imageNamed:@""];
+            cell.featureImage.image = [UIImage imageNamed:@""];
             break;
             
         case 1:
-            cell.leftMessage.text = [NSString stringWithFormat:@"you need to travel 20km"];
-            cell.rightMessage.text = [NSString stringWithFormat:@"you need to travel 20km"];
-            cell.imageView.image = [UIImage imageNamed:@"map-marker.png"];
+            cell.leftMessage.text = [NSString stringWithFormat:@"you need to travel %@km",[[offerDictionary objectForKey:@"user"] objectForKey:@"distance"]];
+            cell.rightMessage.text = [NSString stringWithFormat:@"you need to travel %@km",[[offerDictionary objectForKey:@"stayzilla"] objectForKey:@"distance"]];
+            cell.featureImage.image = [UIImage imageNamed:@"map-marker.png"];
             break;
             
         case 2:
-            cell.leftMessage.text = [NSString stringWithFormat:@"you will spend 2hrs travelling"];
-            cell.rightMessage.text =[NSString stringWithFormat:@"you will spend 2hrs travelling"];
-            cell.imageView.image = [UIImage imageNamed:@"clock.png"];
+            cell.leftMessage.text = [NSString stringWithFormat:@"you will spend %@ travelling",[[offerDictionary objectForKey:@"user"] objectForKey:@"duration"]];
+            cell.rightMessage.text =[NSString stringWithFormat:@"you will spend %@ travelling",[[offerDictionary objectForKey:@"stayzilla"] objectForKey:@"duration"]];
+            cell.featureImage.image = [UIImage imageNamed:@"clock.png"];
             break;
             
         case 3:
-            cell.leftMessage.text = [NSString stringWithFormat:@"you need to spend 100Rs for cab"];
-            cell.rightMessage.text = [NSString stringWithFormat:@"you need to spend 50Rs for cab"];;
-            cell.imageView.image = [UIImage imageNamed:@"cab.png"];
+            cell.leftMessage.text = [NSString stringWithFormat:@"you need to spend %@Rs for cab", [[offerDictionary objectForKey:@"user"] objectForKey:@"cabFare"]];
+            cell.rightMessage.text = [NSString stringWithFormat:@"you need to spend %@Rs for cab",[[offerDictionary objectForKey:@"stayzilla"] objectForKey:@"cabFare"]];
+            cell.featureImage.image = [UIImage imageNamed:@"cab.png"];
             break;
             
         case 4:
             cell.leftMessage.text = @"depends upon your relative or family member";
-            cell.rightMessage.text = [NSString stringWithFormat:@"486Rs you need to spend behind a hotel"];
-            cell.imageView.image = [UIImage imageNamed:@""];
+            cell.rightMessage.text = [NSString stringWithFormat:@"%@ you need to spend behind a hotel",[[offerDictionary objectForKey:@"stayzilla"] objectForKey:@"hotelFare"]];
+            cell.featureImage.image = [UIImage imageNamed:@"bed.png"];
             break;
             
         case 5:
             cell.leftMessage.text = @"doesn't guarantee about insurance";
             cell.rightMessage.text = @"insurance provided(if applied)";
-            cell.imageView.image = [UIImage imageNamed:@"accidentcoverage.png"];
+            cell.featureImage.image = [UIImage imageNamed:@"ambulance.png"];
             break;
             
         case 6:
             cell.leftMessage.text = @"privacy can't be ensured";
             cell.rightMessage.text = @"privacy is ensured";
-            cell.imageView.image = [UIImage imageNamed:@""];
+            cell.featureImage.image = [UIImage imageNamed:@"eye.png"];
             break;
-            
             
         default:
             break;
