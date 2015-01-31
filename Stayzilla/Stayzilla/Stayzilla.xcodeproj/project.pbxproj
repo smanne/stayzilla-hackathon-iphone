@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5560BFDC1A7CDC8800B5996D /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5560BFD81A7CDC8800B5996D /* WelcomeViewController.m */; };
+		5560BFDD1A7CDC8800B5996D /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5560BFDB1A7CDC8800B5996D /* WelcomeView.xib */; };
 		6E4AFAE51A7CD1AD0040E64E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE41A7CD1AD0040E64E /* AVFoundation.framework */; };
 		6E4AFAE71A7CD1B50040E64E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE61A7CD1B50040E64E /* CoreData.framework */; };
 		6E4AFAE91A7CD1BE0040E64E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE81A7CD1BE0040E64E /* CoreLocation.framework */; };
@@ -48,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5560BFD71A7CDC8800B5996D /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		5560BFD81A7CDC8800B5996D /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		5560BFDB1A7CDC8800B5996D /* WelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
 		6E4AFAE41A7CD1AD0040E64E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6E4AFAE61A7CD1B50040E64E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6E4AFAE81A7CD1BE0040E64E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -120,6 +125,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5560BFD51A7CDC8800B5996D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				5560BFD61A7CDC8800B5996D /* Controller */,
+				5560BFD91A7CDC8800B5996D /* Model */,
+				5560BFDA1A7CDC8800B5996D /* View */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		5560BFD61A7CDC8800B5996D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5560BFD71A7CDC8800B5996D /* WelcomeViewController.h */,
+				5560BFD81A7CDC8800B5996D /* WelcomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5560BFD91A7CDC8800B5996D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5560BFDA1A7CDC8800B5996D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5560BFDB1A7CDC8800B5996D /* WelcomeView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6E4AF9BE1A7CCE050040E64E /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +212,7 @@
 		6E576FDF1A7CC8A3004D3CFF /* Stayzilla */ = {
 			isa = PBXGroup;
 			children = (
+				5560BFD51A7CDC8800B5996D /* Welcome */,
 				6E4AFB0B1A7CD96D0040E64E /* GoogleMaps.bundle */,
 				6E4AF9BE1A7CCE050040E64E /* Framework */,
 				6E576FE81A7CC8A3004D3CFF /* AppDelegate.h */,
@@ -324,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4AFB031A7CD5730040E64E /* BusinessTripView.xib in Resources */,
+				5560BFDD1A7CDC8800B5996D /* WelcomeView.xib in Resources */,
 				6E576FE41A7CC8A3004D3CFF /* InfoPlist.strings in Resources */,
 				6E576FEC1A7CC8A3004D3CFF /* Images.xcassets in Resources */,
 				6E4AFB0C1A7CD96D0040E64E /* GoogleMaps.bundle in Resources */,
@@ -346,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4AFAFF1A7CD5390040E64E /* BusinessTripViewController.m in Sources */,
+				5560BFDC1A7CDC8800B5996D /* WelcomeViewController.m in Sources */,
 				6E576FEA1A7CC8A3004D3CFF /* AppDelegate.m in Sources */,
 				6E576FE61A7CC8A3004D3CFF /* main.m in Sources */,
 			);

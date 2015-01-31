@@ -12,6 +12,8 @@
 
 #import <GoogleMaps/GoogleMaps.h>
 #import "BusinessTripViewController.h"
+#import "WelcomeViewController.h"
+
 @implementation AppDelegate
 
 @synthesize navigationController;
@@ -19,24 +21,17 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    
-//    LaunchViewController *authCon = [[LaunchViewController alloc] initWithNibName:@"LaunchViewController" bundle:[NSBundle mainBundle]];
-//    //self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-//    //[self presentModalViewController:help animated:YES];
-    BusinessTripViewController *cpvc = [[BusinessTripViewController alloc] init];
+    [GMSServices provideAPIKey:@"AIzaSyDRk0RY0BhzuAUKw9hdxBgcveD3lfJ0U10"];
+  
+    WelcomeViewController *cpvc = [[WelcomeViewController alloc] init];
 
     UINavigationController *navcon = [[UINavigationController alloc] initWithRootViewController:cpvc];
-//    
-//    if (profilesSelected){
-//        [navcon pushViewController:cpvc animated:NO];
-//    }
-//    
     self.navigationController = navcon;
     [self.window setRootViewController:self.navigationController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [GMSServices provideAPIKey:@"AIzaSyDRk0RY0BhzuAUKw9hdxBgcveD3lfJ0U10"];
+    
     return YES;
 }
 
