@@ -74,6 +74,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5540A9271A7CCAFD0078E882 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				5540A92A1A7CCB9F0078E882 /* Model */,
+				5540A9291A7CCB950078E882 /* Controller */,
+				5540A9281A7CCB880078E882 /* View */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		5540A9281A7CCB880078E882 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5540A9291A7CCB950078E882 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5540A92A1A7CCB9F0078E882 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5540A92C1A7CCBF80078E882 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5540A92D1A7CCC140078E882 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5540A92D1A7CCC140078E882 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		6E576FCD1A7CC8A3004D3CFF = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +153,8 @@
 		6E576FDF1A7CC8A3004D3CFF /* Stayzilla */ = {
 			isa = PBXGroup;
 			children = (
+				5540A92C1A7CCBF80078E882 /* Resources */,
+				5540A9271A7CCAFD0078E882 /* Welcome */,
 				6E576FE81A7CC8A3004D3CFF /* AppDelegate.h */,
 				6E576FE91A7CC8A3004D3CFF /* AppDelegate.m */,
 				6E576FEB1A7CC8A3004D3CFF /* Images.xcassets */,
@@ -437,6 +485,7 @@
 				6E5770041A7CC8A3004D3CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E5770051A7CC8A3004D3CFF /* Build configuration list for PBXNativeTarget "StayzillaTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +494,7 @@
 				6E5770071A7CC8A3004D3CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
