@@ -27,13 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    //    hotelsArray = [[NSMutableArray alloc] init];
-    //    for (int indexCounter=0; indexCounter < 4; indexCounter++) {
-    //        NSMutableDictionary * hotel = [NSMutableDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"Hotel %d",indexCounter+1],@"name",[NSString stringWithFormat:@"%d",(indexCounter+1)*100],@"price",[NSString stringWithFormat:@"Address %d",indexCounter+1],@"address",[NSString stringWithFormat:@"hotel%d.jpg",indexCounter+1],@"image",nil];
-    //
-    //        [hotelsArray addObject:hotel];
-    //    }
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:208.00 green:0.0 blue:162.00 alpha:1.0]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -29,7 +29,11 @@
 }
 
 - (void)viewDidLoad {
-    self.searchDisplayController.searchBar.placeholder = @"Search or Address";
+    self.searchDisplayController.searchBar.placeholder = @"Search Address";
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain
+                                                                     target:self action:@selector(cancel)];
+    [anotherButton setTintColor:[UIColor blackColor]];
+    self.navigationItem.leftBarButtonItem = anotherButton;
 }
 
 - (void)viewDidUnload {
@@ -38,14 +42,10 @@
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    //[self.navigationController.navigationBar setHidden:NO];
+    [self.parentViewController.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:208.00 green:0.0 blue:162.00 alpha:1.0]];
+    
     [self.searchDisplayController.searchBar becomeFirstResponder];
-}
-
-- (void)dealloc {
-//    [selectedPlaceAnnotation release];
-//    [mapView release];
-//    [searchQuery release];
-//    [super dealloc];
 }
 
 - (IBAction)recenterMapToUserLocation:(id)sender {
@@ -172,5 +172,9 @@
     return boolToReturn;
 }
 
+-(IBAction)onCancel:(id)sender{
+    [delegate setPlace:@"Bangalore"];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

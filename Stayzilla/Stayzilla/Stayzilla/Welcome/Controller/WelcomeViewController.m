@@ -14,6 +14,7 @@
     IBOutlet UITextField *userDestionation;
     IBOutlet UIImageView *refresh;
     IBOutlet UIView *background;
+    IBOutlet UISegmentedControl *purpose;
     
     int selectedTextfieldTag;
 }
@@ -41,6 +42,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:208.00 green:0.0 blue:162.00 alpha:1.0]];
 }
 
 
@@ -82,17 +87,14 @@
 -(IBAction) searchHotels:(id)sender{
     
     [self startAnimation];
-    [location resignFirstResponder];
-    __block NSThread *downloadThread = [[NSThread alloc] initWithTarget:self selector:@selector(getHotels) object:nil];
-    [downloadThread start];
-}
 
--(IBAction) searchOffers:(id)sender{
-    
-    [self startAnimation];
-    [location resignFirstResponder];
-    __block NSThread *downloadThread = [[NSThread alloc] initWithTarget:self selector:@selector(getOffers) object:nil];
-    [downloadThread start];
+    if (purpose.selectedSegmentIndex == 0) {
+        __block NSThread *downloadThread = [[NSThread alloc] initWithTarget:self selector:@selector(getHotels) object:nil];
+        [downloadThread start];
+    }else{
+        __block NSThread *downloadThread = [[NSThread alloc] initWithTarget:self selector:@selector(getOffers) object:nil];
+        [downloadThread start];
+    }
 }
 
 -(void) getOffers{
