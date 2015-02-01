@@ -80,7 +80,7 @@
         case 1:
             cell.leftMessage.text = [NSString stringWithFormat:@"you need to travel %@km",[[offerDictionary objectForKey:@"user"] objectForKey:@"distance"]];
             cell.rightMessage.text = [NSString stringWithFormat:@"you need to travel %@km",[[offerDictionary objectForKey:@"stayzilla"] objectForKey:@"distance"]];
-            cell.featureImage.image = [UIImage imageNamed:@"map-marker.png"];
+            cell.featureImage.image = [UIImage imageNamed:@"mapmarker.png"];
             break;
             
         case 2:

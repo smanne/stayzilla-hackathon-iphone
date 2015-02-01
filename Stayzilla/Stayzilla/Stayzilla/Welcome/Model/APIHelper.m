@@ -47,7 +47,7 @@
 -(void) getInterestPlacesForLocation:(NSString *) location{
 
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init] ;
-    [request setURL:[NSURL URLWithString:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=12.9667,77.5667&type=amusement_park%7Cbar&radius=30000&key=AIzaSyA_umdjHwaK3R9hepK1x6_OUI-VoQCbgMI"]];
+    [request setURL:[NSURL URLWithString:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=12.9746239,77.6097423&type=hindu_temple%7Cbar&radius=3000&key=AIzaSyA_umdjHwaK3R9hepK1x6_OUI-VoQCbgMI"]];
     NSError *error;
     NSURLResponse *response;
     NSData *urlData=[NSURLConnection sendSynchronousRequest:request

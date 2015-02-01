@@ -17,7 +17,6 @@
 		554644431A7D403E00B0D4B3 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 554644391A7D403E00B0D4B3 /* eye.png */; };
 		554644441A7D403E00B0D4B3 /* ambulance.png in Resources */ = {isa = PBXBuildFile; fileRef = 5546443A1A7D403E00B0D4B3 /* ambulance.png */; };
 		554644451A7D403E00B0D4B3 /* bed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5546443B1A7D403E00B0D4B3 /* bed.png */; };
-		554644461A7D403E00B0D4B3 /* map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5546443C1A7D403E00B0D4B3 /* map-marker.png */; };
 		554644471A7D403E00B0D4B3 /* accidentcoverage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5546443D1A7D403E00B0D4B3 /* accidentcoverage.png */; };
 		554644481A7D403E00B0D4B3 /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 5546443E1A7D403E00B0D4B3 /* bus.png */; };
 		554644491A7D403E00B0D4B3 /* cab.png in Resources */ = {isa = PBXBuildFile; fileRef = 5546443F1A7D403E00B0D4B3 /* cab.png */; };
@@ -44,6 +43,7 @@
 		55A69DC81A7D67B800B388EA /* SPGooglePlacesPlaceDetailQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A69DC41A7D67B800B388EA /* SPGooglePlacesPlaceDetailQuery.m */; };
 		55A69DCB1A7D67CF00B388EA /* SPGooglePlacesAutocompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A69DCA1A7D67CF00B388EA /* SPGooglePlacesAutocompleteViewController.m */; };
 		55A69DCD1A7D67EA00B388EA /* SPGooglePlacesAutocompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A69DCC1A7D67EA00B388EA /* SPGooglePlacesAutocompleteViewController.xib */; };
+		55C283981A7DF39000123978 /* mapmarker.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C283971A7DF39000123978 /* mapmarker.png */; };
 		6E4AFAE51A7CD1AD0040E64E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE41A7CD1AD0040E64E /* AVFoundation.framework */; };
 		6E4AFAE71A7CD1B50040E64E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE61A7CD1B50040E64E /* CoreData.framework */; };
 		6E4AFAE91A7CD1BE0040E64E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4AFAE81A7CD1BE0040E64E /* CoreLocation.framework */; };
@@ -101,7 +101,6 @@
 		554644391A7D403E00B0D4B3 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
 		5546443A1A7D403E00B0D4B3 /* ambulance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ambulance.png; sourceTree = "<group>"; };
 		5546443B1A7D403E00B0D4B3 /* bed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bed.png; sourceTree = "<group>"; };
-		5546443C1A7D403E00B0D4B3 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
 		5546443D1A7D403E00B0D4B3 /* accidentcoverage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accidentcoverage.png; sourceTree = "<group>"; };
 		5546443E1A7D403E00B0D4B3 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus.png; sourceTree = "<group>"; };
 		5546443F1A7D403E00B0D4B3 /* cab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cab.png; sourceTree = "<group>"; };
@@ -138,6 +137,7 @@
 		55A69DC91A7D67CF00B388EA /* SPGooglePlacesAutocompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGooglePlacesAutocompleteViewController.h; sourceTree = "<group>"; };
 		55A69DCA1A7D67CF00B388EA /* SPGooglePlacesAutocompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGooglePlacesAutocompleteViewController.m; sourceTree = "<group>"; };
 		55A69DCC1A7D67EA00B388EA /* SPGooglePlacesAutocompleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPGooglePlacesAutocompleteViewController.xib; sourceTree = "<group>"; };
+		55C283971A7DF39000123978 /* mapmarker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapmarker.png; sourceTree = "<group>"; };
 		6E4AFAE41A7CD1AD0040E64E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6E4AFAE61A7CD1B50040E64E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6E4AFAE81A7CD1BE0040E64E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -288,10 +288,10 @@
 		5560BFF41A7D046E00B5996D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				55C283971A7DF39000123978 /* mapmarker.png */,
 				554644391A7D403E00B0D4B3 /* eye.png */,
 				5546443A1A7D403E00B0D4B3 /* ambulance.png */,
 				5546443B1A7D403E00B0D4B3 /* bed.png */,
-				5546443C1A7D403E00B0D4B3 /* map-marker.png */,
 				5546443D1A7D403E00B0D4B3 /* accidentcoverage.png */,
 				5546443E1A7D403E00B0D4B3 /* bus.png */,
 				5546443F1A7D403E00B0D4B3 /* cab.png */,
@@ -594,7 +594,6 @@
 				5560BFEC1A7CEDC000B5996D /* HotelsView.xib in Resources */,
 				5560BFFC1A7D049200B5996D /* hotel2.jpg in Resources */,
 				6E576FEC1A7CC8A3004D3CFF /* Images.xcassets in Resources */,
-				554644461A7D403E00B0D4B3 /* map-marker.png in Resources */,
 				5546442E1A7D1AB800B0D4B3 /* LocationView.xib in Resources */,
 				554644451A7D403E00B0D4B3 /* bed.png in Resources */,
 				5560BFF01A7CEE7700B5996D /* HotelsCellView.xib in Resources */,
@@ -603,6 +602,7 @@
 				554644381A7D264B00B0D4B3 /* ComaparisonTableViewCell.xib in Resources */,
 				5546444C1A7D403E00B0D4B3 /* eventcalendar.png in Resources */,
 				5560BFE21A7CE32900B5996D /* SelectionView.xib in Resources */,
+				55C283981A7DF39000123978 /* mapmarker.png in Resources */,
 				5560BFFE1A7D05C400B5996D /* loading.png in Resources */,
 				554644301A7D24EC00B0D4B3 /* ComparisionView.xib in Resources */,
 				55A69DCD1A7D67EA00B388EA /* SPGooglePlacesAutocompleteViewController.xib in Resources */,
