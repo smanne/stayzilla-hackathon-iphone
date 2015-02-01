@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550ABA011A7DCCA3000B3CA4 /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 550ABA001A7DCCA3000B3CA4 /* CALayer+XibConfiguration.m */; };
 		554644291A7D1A5400B0D4B3 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554644281A7D1A5400B0D4B3 /* LocationViewController.m */; };
 		5546442E1A7D1AB800B0D4B3 /* LocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5546442D1A7D1AB800B0D4B3 /* LocationView.xib */; };
 		554644301A7D24EC00B0D4B3 /* ComparisionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5546442F1A7D24EC00B0D4B3 /* ComparisionView.xib */; };
@@ -86,6 +87,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550AB9FF1A7DCCA3000B3CA4 /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
+		550ABA001A7DCCA3000B3CA4 /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
 		554644271A7D1A5400B0D4B3 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		554644281A7D1A5400B0D4B3 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		5546442D1A7D1AB800B0D4B3 /* LocationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationView.xib; sourceTree = "<group>"; };
@@ -210,6 +213,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550AB9FE1A7DCC78000B3CA4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				550AB9FF1A7DCCA3000B3CA4 /* CALayer+XibConfiguration.h */,
+				550ABA001A7DCCA3000B3CA4 /* CALayer+XibConfiguration.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		5560BFD51A7CDC8800B5996D /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,8 +262,6 @@
 				55A69DC21A7D67B800B388EA /* SPGooglePlacesAutocompleteUtilities.m */,
 				55A69DC31A7D67B800B388EA /* SPGooglePlacesPlaceDetailQuery.h */,
 				55A69DC41A7D67B800B388EA /* SPGooglePlacesPlaceDetailQuery.m */,
-				5560BFE31A7CEAD500B5996D /* APIHelper.h */,
-				5560BFE41A7CEAD500B5996D /* APIHelper.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,6 +362,7 @@
 		6E576FDF1A7CC8A3004D3CFF /* Stayzilla */ = {
 			isa = PBXGroup;
 			children = (
+				550AB9FE1A7DCC78000B3CA4 /* Utilities */,
 				5560BFD51A7CDC8800B5996D /* Welcome */,
 				6ED8609E1A7D3904009C625E /* BusinessTrip */,
 				6ED8609B1A7D38AF009C625E /* SightseeingTrip */,
@@ -503,6 +514,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Blackhat;
 				TargetAttributes = {
+					6E576FD51A7CC8A3004D3CFF = {
+						DevelopmentTeam = 528CW28SYR;
+					};
 					6E576FF01A7CC8A3004D3CFF = {
 						TestTargetID = 6E576FD51A7CC8A3004D3CFF;
 					};
@@ -626,6 +640,7 @@
 				554644331A7D250B00B0D4B3 /* ComparisionViewController.m in Sources */,
 				5560BFE51A7CEAD500B5996D /* APIHelper.m in Sources */,
 				55A69DCB1A7D67CF00B388EA /* SPGooglePlacesAutocompleteViewController.m in Sources */,
+				550ABA011A7DCCA3000B3CA4 /* CALayer+XibConfiguration.m in Sources */,
 				6E576FE61A7CC8A3004D3CFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

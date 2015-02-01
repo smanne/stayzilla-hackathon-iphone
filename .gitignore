@@ -2,3 +2,7 @@
 Stayzilla/Stayzilla/Stayzilla.xcodeproj/project.xcworkspace/xcuserdata/Pradyumna.xcuserdatad/UserInterfaceState.xcuserstate
 
 *.plist
+
+*.xcuserstate
+
+*.xcbkptlist

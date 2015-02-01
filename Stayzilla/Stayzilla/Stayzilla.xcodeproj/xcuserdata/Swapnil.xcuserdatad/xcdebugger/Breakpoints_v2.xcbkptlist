@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Stayzilla/Welcome/Controller/SPGooglePlacesAutocompleteViewController.m"
-            timestampString = "444431598.759401"
+            filePath = "Stayzilla/Welcome/Model/APIHelper.m"
+            timestampString = "444433567.352885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-placePhoto:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Stayzilla/Welcome/Model/APIHelper.m"
-            timestampString = "444433567.352885"
+            filePath = "Stayzilla/Welcome/Controller/WelcomeViewController.m"
+            timestampString = "444435505.771388"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "-placePhoto:"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "-setPlace:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

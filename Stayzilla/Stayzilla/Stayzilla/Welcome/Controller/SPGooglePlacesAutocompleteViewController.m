@@ -36,6 +36,11 @@
     [super viewDidUnload];
 }
 
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.searchDisplayController.searchBar becomeFirstResponder];
+}
+
 - (void)dealloc {
 //    [selectedPlaceAnnotation release];
 //    [mapView release];
@@ -113,16 +118,6 @@
     SPGooglePlacesAutocompletePlace *place = [self placeAtIndexPath:indexPath];
     [delegate setPlace:place.name];
     [self dismissViewControllerAnimated:YES completion:nil];
-//    [place resolveToPlacemark:^(CLPlacemark *placemark, NSString *addressString, NSError *error) {
-//        if (error) {
-//            SPPresentAlertViewWithErrorAndTitle(error, @"Could not map selected Place");
-//        } else if (placemark) {
-//            [self addPlacemarkAnnotationToMap:placemark addressString:addressString];
-//            [self recenterMapToPlacemark:placemark];
-//            [self dismissSearchControllerWhileStayingActive];
-//            [self.searchDisplayController.searchResultsTableView deselectRowAtIndexPath:indexPath animated:NO];
-//        }
-//    }];
 }
 
 #pragma mark -

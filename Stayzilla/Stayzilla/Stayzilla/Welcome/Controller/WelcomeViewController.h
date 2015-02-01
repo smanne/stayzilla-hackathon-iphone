@@ -11,6 +11,7 @@
 #import "HotelsViewController.h"
 #import "ComparisionViewController.h"
 #import "SPGooglePlacesAutocompleteViewController.h"
+#import "CALayer+XibConfiguration.h"
 
 @interface WelcomeViewController : UIViewController <UITextFieldDelegate, APIHelperProtocol, LocatioanSelectionDelegate>
 
